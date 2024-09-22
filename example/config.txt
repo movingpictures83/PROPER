@@ -1,0 +1,2 @@
+Prefix plugins/PROPER/example/
+Plugin PROPER inputfile parameters.txt outputfile output.pdf
