@@ -70,6 +70,8 @@ sim.opts.Cheung = RNAseq.SimOptions.2grp(ngenes = as.integer(parameters["ngenes"
       powers = comparePower(simres, alpha.type="pval", alpha.nominal=0.001,
         stratify.by="dispersion", target.by="effectsize", delta=1)
 
+      #print(str(simres))
+      write.csv(simres$sim.opts$lfc, paste(outputfile, "csv", sep="."))
       ggsave(outputfile)
 
 ## ----echo=TRUE, result=TRUE------------------------------------------------
